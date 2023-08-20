@@ -5,6 +5,7 @@ const StatisticElement = styled.li`
   justify-content: center;
   flex-direction: column;
   width: calc(100% / 5);
+  background-color: ${props => props.backColor};
 `;
 
 export default StatisticElement;
