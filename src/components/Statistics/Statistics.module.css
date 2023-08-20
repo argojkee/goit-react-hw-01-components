@@ -1,0 +1,25 @@
+.statistics {
+  width: 342px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.title {
+  margin: 0;
+}
+
+.statsList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  border: 1px solid black;
+}
+
+.statsList > :not(:last-child) {
+  border-right: 1px solid black;
+}

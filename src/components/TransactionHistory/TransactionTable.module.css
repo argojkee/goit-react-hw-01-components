@@ -1,0 +1,24 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 342px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+thead {
+  background-color: aqua;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}

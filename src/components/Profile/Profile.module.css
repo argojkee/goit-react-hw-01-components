@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid green;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tag {
+  color: blue;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  border: 1px solid black;
+}
+
+.stats > :not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% / 3);
+}
