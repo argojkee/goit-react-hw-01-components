@@ -6,9 +6,7 @@ const Profile = ({
   userName,
   tag,
   location,
-  followers,
-  views,
-  likes,
+  stats: { followers, views, likes },
 }) => {
   return (
     <div className={css.profile}>
@@ -40,11 +38,13 @@ const Profile = ({
 export default Profile;
 
 Profile.propTypes = {
-  userAvatar: PropTypes.string,
-  userName: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
+  userAvatar: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
